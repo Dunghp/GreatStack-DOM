@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>how to get ...next sibling & previous sibling</title>
+</head>
+<body>
+    <div class="title">
+        <p>Well come to page 1</p>
+        <p class="second">Well come to page 2</p>
+        <p>Well come to page 3</p>
+        <p>Well come to page 4</p>
+    </div>
+
+<script>
+    let second = document.querySelector(".second");
+    console.log(second.previousElementSibling);
+    console.log(second.nextElementSibling);
+</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn about css property</title>
+    <style>
+        input{
+            background: red;
+            font-size: 12px;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" id="username" placeholder="username">
+
+<script>
+    let inputBox = document.getElementById("username");
+    // window.getComputedStyle(element, pseudoElement); this is method 
+    console.log(window.getComputedStyle(inputBox));
+    console.log(window.getComputedStyle(inputBox).fontSize);
+    console.log(window.getComputedStyle(inputBox).backgroundColor);
+    console.log(window.getComputedStyle(inputBox).width);
+</script>
+</body>
+</html>

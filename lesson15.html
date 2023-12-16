@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to use .cloneNode()</title>
+</head>
+<body>
+    <ul id="menu">
+        <li>Home</li>
+        <li>About</li>
+        <li>Blog</li>
+    </ul>
+
+<script>
+    let menu = document.getElementById("menu");
+
+    // let newNode = originalNode.cloneNode(); /*this is method*?
+    let newNode = menu.cloneNode();
+    // let newNode = menu.cloneNode(true);
+    // let newNode = menu.cloneNode(false);
+    console.log(newNode);
+</script>
+</body>
+</html>

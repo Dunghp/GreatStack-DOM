@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn about className property</title>
+</head>
+<body>
+    <h1 id="title" class="main message">My website</h1>
+
+<script>
+    let title = document.getElementById("title");
+
+    // we can get clas list 
+    // console.log(title.className);
+
+    // we can replace class 
+    // title.className = "new";
+    
+    // we can concat class list 
+    // title.className += " new";
+    // console.log(title);
+
+    // we can get classList
+    // console.log(title.classList);
+
+    // we can add new class or multiple class
+    // title.classList.add("new");
+    // title.classList.add("new", "new2");
+
+    // we can remove class or multiple class
+    // title.classList.remove("message");
+    // title.classList.remove("message", "main");
+
+    // we can replace class 
+    // title.classList.replace("message", "msg");
+    // console.log(title);
+
+    // we can check class exist or not 
+    // console.log(title.classList.contains("message"));
+
+    // toggle method can add or remove a class 
+    title.classList.toggle("new");
+    title.classList.toggle("message");
+    console.log(title);
+</script>
+</body>
+</html>

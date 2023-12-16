@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to use .after()</title>
+</head>
+<body>
+    <ul id="menu">
+        <li>Home</li>
+        <li>About</li>
+        <li>Blog</li>
+    </ul>
+
+<script>
+    let menu = document.getElementById("menu");
+
+    let input = document.createElement("input");
+    let textarea = document.createElement("textarea");
+    let p = document.createElement("p");
+    p.innerHTML = "well come to my website!";
+    
+    menu.after(textarea, p, input);
+    // menu.after(node);
+    // menu.after(node1, node2, ...node);
+    // menu.after(str1, str2, ...str);
+</script>
+</body>
+</html>

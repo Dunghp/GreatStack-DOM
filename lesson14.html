@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>how to use .append() & .prepend() & .insertAdjacentHTML & .replaceChild</title>
+</head>
+<body>
+    <ul id="menu">
+
+        <li>Home</li>
+        <li>About</li>
+        <li>Blog</li>
+
+    </ul>
+
+<script>
+    // parentNode=menu 
+    let menu = document.getElementById("menu");
+
+    // parentNode.append(newNodes);    /*add many nodes*/
+    // parentNode.prepend(newNodes);  /*add to the first node*/
+    // menu.insertAdjacentHTML(position, text);
+
+    menu.insertAdjacentHTML("beforeend", "<li>Contact</li>");
+    menu.insertAdjacentHTML("afterbegin", "<p>Hello my web!</p>");
+
+    // parentNode.replaceChild(newChild, oldChild);
+</script>
+</body>
+</html>

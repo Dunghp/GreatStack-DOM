@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn about Attribute method</title>
+</head>
+<body>
+    <input type="text" id="username" placeholder="username"
+     style="background-color: red; font-size: 20px;">
+
+<script>
+    let inputBox = document.getElementById("username");
+
+    // console.log(inputBox.attributes);
+    // console.log(inputBox.getAttribute("type"));
+    // console.log(inputBox.getAttribute("placeholder"));
+
+    // #learn about setAttribute
+    // inputBox.setAttribute("name", "value"); This is method
+    // inputBox.setAttribute("class", "user");
+    // inputBox.setAttribute("id", "user");
+    // inputBox.setAttribute("type", "radio");
+    // console.log(inputBox);
+
+    // #learn about hasAttribute()
+    // console.log(inputBox.hasAttribute("class"));
+    // console.log(inputBox.hasAttribute("id"));
+
+    // #learn about removeAttribute()
+    // inputBox.removeAttribute("placeholder");
+    // console.log(inputBox);
+
+    // #Manipulatin Element's style
+    console.log(inputBox.style);
+    console.log(inputBox.style.backgroundColor);
+
+    inputBox.style.padding = "10px";
+    inputBox.style.marginLeft = "30px";
+    inputBox.style.marginTop = "30px";
+    // inputBox.style.cssText = "width: 200px";
+    inputBox.style.cssText += "width: 200px; height: 100px";
+    console.log(inputBox);
+</script>
+</body>
+</html>
